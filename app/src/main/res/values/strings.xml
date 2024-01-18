@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+
+    <!--Login-->
+    <string name="loginForm">Welcome back!</string>
+    <string name="loginButton">Login</string>
+    <string name="forgotPassword"><u>Forgot your password?</u></string>
+    <string name="goToRegister"><u>Not yet registered?</u></string>
+
+    <!--Register-->
+    <string name="registerForm">Create an account</string>
+    <string name="goToLogin"><u>Already have an account?</u></string>
+    <string name="registerButton">Register</string>
+
+    <!--Forms-->
+    <string name="unameLabel">Username</string>
+    <string name="passLabel">Password</string>
+    <string name="login_remember">Remember me.</string>
+    <string name="lastnameLabel">Lastname</string>
+    <string name="firstnameLabel">Firstname</string>
+    <string name="middlenameLabel">Middlename</string>
+    <string name="radioButton2">Female</string>
+    <string name="radioButton3">Other</string>
+    <string name="radioButton1">Male</string>
+    <string name="emailLabel">Email</string>
 </resources>
