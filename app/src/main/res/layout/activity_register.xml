@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pastelYellow"
+    android:background="@color/yellow_light"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Register">
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/custom_edittext"
+            android:background="@drawable/yellow_edittext"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -29,28 +29,29 @@
                 android:id="@+id/registerText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
                 android:text="@string/registerForm"
                 android:textAlignment="center"
-                android:textColor="@color/pastelPurple"
+                android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/redirect_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginTop="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/goToLogin"
                 android:textAlignment="center"
-                android:textColor="@color/pastelPurple"
+                android:textColor="@color/indigo"
                 android:textSize="18sp"
                 android:textStyle="italic" />
 
+            <!--Firstname Middlename-->
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -64,14 +65,12 @@
                         android:id="@+id/registerFirstname"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:layout_marginTop="20dp"
                         android:autofillHints="@string/firstnameLabel"
-                        android:background="@drawable/custom_edittext"
+                        android:background="@drawable/white_edittext"
                         android:drawablePadding="8dp"
                         android:hint="@string/firstnameLabel"
                         android:inputType="text"
-                        android:padding="8dp"
-                        android:textColor="@color/forestGreen" />
+                        android:padding="8dp" />
                 </LinearLayout>
 
                 <!-- Right side spacer -->
@@ -91,14 +90,12 @@
                         android:id="@+id/registerMiddlename"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:layout_marginTop="20dp"
                         android:autofillHints="@string/middlenameLabel"
-                        android:background="@drawable/custom_edittext"
+                        android:background="@drawable/white_edittext"
                         android:drawablePadding="8dp"
                         android:hint="@string/middlenameLabel"
                         android:inputType="text"
-                        android:padding="8dp"
-                        android:textColor="@color/forestGreen" />
+                        android:padding="8dp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -110,46 +107,48 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
                 android:autofillHints="@string/lastnameLabel"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/white_edittext"
                 android:drawablePadding="8dp"
                 android:hint="@string/lastnameLabel"
                 android:inputType="text"
-                android:padding="8dp"
-                android:textColor="@color/forestGreen" />
+                android:padding="8dp" />
 
             <!--Register Button-->
             <RadioGroup
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioButton1"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
                     android:text="@string/radioButton1"
-                    android:textColor="@color/pastelPurple"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:buttonTint="@color/pastelPurple" />
+                    app:buttonTint="@color/black" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
                     android:text="@string/radioButton2"
-                    android:textColor="@color/pastelPurple"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:buttonTint="@color/pastelPurple" />
+                    app:buttonTint="@color/black" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButton3"
-                    android:textColor="@color/pastelPurple"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:buttonTint="@color/pastelPurple" />
+                    app:buttonTint="@color/black" />
 
             </RadioGroup>
 
@@ -159,13 +158,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:autofillHints="@string/unameLabel"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/white_edittext"
                 android:drawableStart="@drawable/username_icon"
                 android:drawablePadding="8dp"
                 android:hint="@string/unameLabel"
                 android:inputType="text"
-                android:padding="8dp"
-                android:textColor="@color/forestGreen" />
+                android:padding="8dp" />
 
             <!--Email-->
             <EditText
@@ -174,13 +172,12 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
                 android:autofillHints="@string/emailLabel"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/white_edittext"
                 android:drawableStart="@drawable/email_icon"
                 android:drawablePadding="8dp"
                 android:hint="@string/emailLabel"
                 android:inputType="textEmailAddress"
-                android:padding="8dp"
-                android:textColor="@color/forestGreen" />
+                android:padding="8dp" />
 
             <!--Password-->
             <EditText
@@ -189,20 +186,20 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
                 android:autofillHints="@string/passLabel"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/white_edittext"
                 android:drawableStart="@drawable/password_icon"
                 android:drawablePadding="8dp"
                 android:hint="@string/passLabel"
                 android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/forestGreen" />
-
+                android:padding="8dp" />
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/pastelPurple"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/black"
                 android:text="@string/registerButton"
                 android:textSize="20sp"
                 app:cornerRadius="30dp" />

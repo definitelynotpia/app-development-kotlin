@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="pastelYellow">#FFF4BD</color>
-    <color name="pastelPink">#F4B9B8</color>
-    <color name="pastelBlue">#85D2D0</color>
-    <color name="pastelPurple">#887BB0</color>
-    <color name="forestGreen">#3a4a3d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="yellow">#FFDD00</color>
+    <color name="yellow_light">#FFF299</color>
+
+    <color name="orange">#FF8000</color>
+    <color name="indigo">#4D0099</color>
 </resources>

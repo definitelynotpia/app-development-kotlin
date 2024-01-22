@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/pastelYellow"
+    android:background="@color/yellow_light"
     tools:context=".Login">
 
     <androidx.cardview.widget.CardView
@@ -23,25 +23,25 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
-            android:background="@drawable/custom_edittext">
+            android:background="@drawable/yellow_edittext">
 
             <Button
                 android:id="@+id/mainLogin"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Login"
+                android:text="@string/loginButton"
                 android:textSize="20sp"
-                android:backgroundTint="@color/pastelPurple"
+                android:backgroundTint="@color/black"
                 app:cornerRadius="30dp"/>
 
             <Button
                 android:id="@+id/mainRegister"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Register"
+                android:text="@string/registerButton"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/pastelPurple"
+                android:backgroundTint="@color/black"
                 app:cornerRadius="30dp"/>
 
         </LinearLayout>

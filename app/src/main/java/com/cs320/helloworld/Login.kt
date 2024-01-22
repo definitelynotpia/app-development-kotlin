@@ -42,7 +42,7 @@ class Login : AppCompatActivity() {
                 ).show()
 
                 // Redirect to Main Activity
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Home::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "Login Failed, create an account now!", Toast.LENGTH_SHORT)

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/yellow_edittext"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/shopText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/storeTitle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shopWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/shopWelcome"
+                android:textAlignment="center"
+                android:textColor="@color/indigo"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sizesPriceGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sizePriceGuide"
+                android:textAlignment="center"
+                android:textColor="@color/indigo"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/shopShirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"
+                        android:button="@drawable/checkbox_icon"
+                        android:drawableEnd="@drawable/shirt_foreground"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+
+                    <CheckBox
+                        android:id="@+id/shopDress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-30dp"
+                        android:button="@drawable/checkbox_icon"
+                        android:drawableEnd="@drawable/dress_foreground"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+
+                    <CheckBox
+                        android:id="@+id/shopJacket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-30dp"
+                        android:button="@drawable/checkbox_icon"
+                        android:drawableEnd="@drawable/jacket_foreground"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+
+                </ LinearLayout>
+
+                <!-- Right side spacer -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="202dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--Shirt-->
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/shirtSize1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/shirtSize2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/shirtSize3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/shirtSize4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+                    </RadioGroup>
+
+                    <!--Dress-->
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/dressSize1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/dressSize2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/dressSize3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/dressSize4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+                    </RadioGroup>
+
+                    <!--Jacket-->
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/jacketSize1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/jacketSize2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize2"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/jacketSize3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize3"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/jacketSize4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemSize4"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:buttonTint="@color/black" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/black"
+                android:text="@string/addToCartButton"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pastelYellow"
+    android:background="@color/yellow_light"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Login">
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/custom_edittext"
+            android:background="@drawable/yellow_edittext"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -29,9 +29,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
                 android:text="@string/loginForm"
                 android:textAlignment="center"
-                android:textColor="@color/pastelPurple"
+                android:textColor="@color/black"
                 android:textSize="31sp"
                 android:textStyle="bold" />
 
@@ -39,15 +40,13 @@
                 android:id="@+id/loginUsername"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="40dp"
                 android:autofillHints="@string/unameLabel"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/white_edittext"
                 android:drawableStart="@drawable/username_icon"
                 android:drawablePadding="8dp"
                 android:hint="@string/unameLabel"
                 android:inputType="text"
-                android:padding="8dp"
-                android:textColor="@color/forestGreen" />
+                android:padding="8dp" />
 
             <EditText
                 android:id="@+id/loginPassword"
@@ -55,31 +54,33 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:autofillHints="@string/passLabel"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/white_edittext"
                 android:drawableStart="@drawable/password_icon"
                 android:drawablePadding="8dp"
                 android:hint="@string/passLabel"
                 android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/forestGreen" />
+                android:padding="8dp" />
 
             <CheckBox
                 android:id="@+id/rememberMe"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                app:buttonTint="@color/pastelPurple"
+                android:button="@drawable/checkbox_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:text="@string/login_remember"
-                android:textColor="@color/pastelPurple"
-                android:textSize="18sp"
-                />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/login_button"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/pastelPurple"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/black"
                 android:text="@string/loginButton"
                 android:textSize="20sp"
                 app:cornerRadius="30dp" />
@@ -87,26 +88,26 @@
             <TextView
                 android:id="@+id/forgot_password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginTop="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/forgotPassword"
                 android:textAlignment="center"
-                android:textColor="@color/pastelPurple"
+                android:textColor="@color/indigo"
                 android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/redirect_register"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="-10dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/goToRegister"
                 android:textAlignment="center"
-                android:textColor="@color/pastelPurple"
+                android:textColor="@color/indigo"
                 android:textSize="18sp"
                 android:textStyle="italic" />
 

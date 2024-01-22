@@ -23,4 +23,14 @@
     <string name="radioButton3">Other</string>
     <string name="radioButton1">Male</string>
     <string name="emailLabel">Email</string>
+
+    <!--Home-->
+    <string name="storeTitle">Store</string>
+    <string name="shopWelcome">Welcome to our shop! Browse to your heart\'s content.</string>
+    <string name="itemSize1">S</string>
+    <string name="itemSize2">M</string>
+    <string name="itemSize3">L</string>
+    <string name="itemSize4">XL</string>
+    <string name="sizePriceGuide">S = ₱100.00\nM = ₱150.00\nL = ₱200.</string>
+    <string name="addToCartButton">Add To Cart</string>
 </resources>
