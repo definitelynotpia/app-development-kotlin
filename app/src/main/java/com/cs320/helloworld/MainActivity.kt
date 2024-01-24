@@ -15,9 +15,14 @@ class MainActivity : AppCompatActivity() {
         val registerBtn = findViewById<Button>(R.id.mainRegister)
 
         loginBtn.setOnClickListener {
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
+
+//        loginBtn.setOnClickListener {
+//            val intent = Intent(this, Login::class.java)
+//            startActivity(intent)
+//        }
 
         registerBtn.setOnClickListener {
             val intent = Intent(this, Register::class.java)

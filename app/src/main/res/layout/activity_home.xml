@@ -47,20 +47,6 @@
                 android:textColor="@color/indigo"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/sizesPriceGuide"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/sizePriceGuide"
-                android:textAlignment="center"
-                android:textColor="@color/indigo"
-                android:textSize="18sp"
-                android:textStyle="italic" />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,37 +59,49 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/shopShirt"
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/storeItemTitle"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="ITEMS"
+                        android:textAlignment="center"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/shopShirt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
                         android:layout_marginTop="-15dp"
-                        android:button="@drawable/checkbox_icon"
-                        android:drawableEnd="@drawable/shirt_foreground"
+                        android:src="@drawable/shirt_foreground"
                         android:focusable="false"
                         android:focusableInTouchMode="false" />
 
-                    <CheckBox
+                    <ImageView
                         android:id="@+id/shopDress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-30dp"
-                        android:button="@drawable/checkbox_icon"
-                        android:drawableEnd="@drawable/dress_foreground"
+                        android:src="@drawable/dress_foreground"
                         android:focusable="false"
                         android:focusableInTouchMode="false" />
 
-                    <CheckBox
+                    <ImageView
                         android:id="@+id/shopJacket"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-30dp"
-                        android:button="@drawable/checkbox_icon"
-                        android:drawableEnd="@drawable/jacket_foreground"
+                        android:src="@drawable/jacket_foreground"
                         android:focusable="false"
                         android:focusableInTouchMode="false" />
 
-                </ LinearLayout>
+                </LinearLayout>
 
                 <!-- Right side spacer -->
                 <View
@@ -112,10 +110,25 @@
                     android:layout_weight="1" />
 
                 <LinearLayout
-                    android:layout_width="202dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="-20dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/storeSizesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="SIZES"
+                        android:textAlignment="center"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <!--Shirt-->
                     <RadioGroup
@@ -153,14 +166,6 @@
                             android:textSize="16sp"
                             app:buttonTint="@color/black" />
 
-                        <RadioButton
-                            android:id="@+id/shirtSize4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/itemSize4"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            app:buttonTint="@color/black" />
                     </RadioGroup>
 
                     <!--Dress-->
@@ -195,15 +200,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/itemSize3"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            app:buttonTint="@color/black" />
-
-                        <RadioButton
-                            android:id="@+id/dressSize4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/itemSize4"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             app:buttonTint="@color/black" />
@@ -244,29 +240,172 @@
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             app:buttonTint="@color/black" />
-
-                        <RadioButton
-                            android:id="@+id/jacketSize4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/itemSize4"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            app:buttonTint="@color/black" />
                     </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Right side spacer -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/storePriceTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="PRICE"
+                        android:textAlignment="center"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/shirtPrice"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="27dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dressPrice"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="54dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jacketPrice"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="54dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/priceTotalTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="TOTAL PRICE"
+                        android:textAlignment="center"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/priceTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/black_edittext"
+                        android:drawablePadding="8dp"
+                        android:padding="13dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Right side spacer -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/paymentTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="YOUR PAYMENT"
+                        android:textAlignment="center"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/paymentAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:autofillHints="Enter the amount of money you will pay."
+                        android:background="@drawable/white_edittext"
+                        android:drawablePadding="8dp"
+                        android:hint="Your payment..."
+                        android:inputType="number"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
             <Button
-                android:layout_width="200dp"
+                android:id="@+id/checkoutButton"
+                android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/black"
-                android:text="@string/addToCartButton"
+                android:text="@string/checkoutButton"
                 android:textSize="20sp"
                 app:cornerRadius="30dp" />
 

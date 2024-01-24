@@ -26,11 +26,23 @@
 
     <!--Home-->
     <string name="storeTitle">Store</string>
-    <string name="shopWelcome">Welcome to our shop! Browse to your heart\'s content.</string>
+    <string name="shopWelcome">Welcome to our shop!</string>
     <string name="itemSize1">S</string>
     <string name="itemSize2">M</string>
     <string name="itemSize3">L</string>
     <string name="itemSize4">XL</string>
     <string name="sizePriceGuide">S = ₱100.00\nM = ₱150.00\nL = ₱200.</string>
-    <string name="addToCartButton">Add To Cart</string>
+    <string name="checkoutButton">Checkout</string>
+
+    <!--Item Prices-->
+    <string name="small">₱100.00</string>
+    <string name="medium">₱150.00</string>
+    <string name="large">₱200.00</string>
+
+    <!--Cart-->
+    <string name="cartDescription">When you\'re ready to checkout, click the button below.</string>
+    <string name="cartIntro">Manage your purchases here.</string>
+    <string name="cartShirtDescription">Cart Item: Shirt</string>
+    <string name="cartDressDescription">Cart Item: Dress</string>
+    <string name="cartJacketDescription">Cart Item: Jacket</string>
 </resources>
